@@ -1,0 +1,33 @@
+.navbar-toggler:focus, .navbar-toggler:hover {
+	outline:none;
+}
+ul{
+	list-style-type: none;
+}
+h1{
+	color:black;
+	font-size: 44px;
+	font-weight: 700;
+}
+h2{
+	color:black;
+	font-size: 38px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+h3{
+	color:black;
+	font-size: 26px;
+	font-weight: 600;
+}
+.special_p{
+	font-size: 16px;
+	font-weight: 500;
+	color:black;
+}
+input:focus, textarea:focus, select:focus{
+        outline: none;
+}
+.orange{
+	color:#d6a650;
+}

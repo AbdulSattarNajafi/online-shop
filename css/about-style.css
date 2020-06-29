@@ -1,0 +1,254 @@
+@import url(all.min.css);
+@import url(partials/_variables.css);
+@import url(partials/globle.css);
+
+body{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	overflow-x: hidden;
+}
+/*Style for Header*/
+header{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	background-color:#fff;
+	z-index: 10;
+}
+.navbar{
+	padding: 20px 0;
+}
+.navbar-brand{
+	text-transform: uppercase;
+	color:black;
+	font-size: 22px;
+	font-weight: 500;
+}
+.navbar-light .navbar-collapse form a{
+	color:black;
+}
+.navbar-light .navbar-nav .nav-link{
+	position: relative;
+	display: block;
+	color:black!important;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 10px 15px;
+	transition: .4s ease;
+}
+.navbar-light .navbar-nav .active::after{
+	content:"";
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left:30%;
+	width: 40%;
+	height: 2px;
+	background:black;
+}
+.navbar-light .navbar-nav .nav-link::before{
+	content:"";
+	position: absolute;
+	bottom: 0;
+	left:30%;
+	width: 40%;
+	height: 2px;
+	background:black;
+	visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+.navbar-light .navbar-nav .nav-link:hover::before{
+	visibility: visible;
+    transform: scaleX(1);
+}
+/*End of Header*/
+/*Start for About Us*/
+main .about_us{
+	width: 100%;
+	height: auto;
+	background-color: #edf6ff;
+}
+.about_us .aboutus_desc{
+	padding: 14rem 0 6rem 0;
+}
+/*End for About Us*/
+/*Start for Small store*/
+main .small_store{
+	width: 100%;
+	margin: 2rem 0;
+}
+.small_store .smallstore_desc{
+	padding: 5rem;
+}
+.small_store .smallstore_img{
+	padding-top: 9rem;
+}
+.small_store .smallstore_img .back{
+	position: relative;
+	margin-left: -.9rem;
+}
+.small_store .smallstore_img .front{
+	position: absolute;
+	top: 4rem;
+	right: 0;
+	z-index: 222;
+}
+/*End for Small store*/
+/*Start for banner store*/
+main .about_banner{
+	width: 100%;
+	padding-top: 2rem;
+}
+.about_banner .about_banner_img img{
+	width: 100vw;
+	height: auto;
+}
+/*End for banner store*/
+/*Strat for be firstone area*/
+main .be-firstone{
+	margin:5rem 0;
+}
+.be-firstone .container .join_now .join_form form input{
+	width: 100%;
+	border:none;
+	outline: none;
+	background-color: #f0f0f0;
+	padding: 1.5rem 1.4rem;
+	font-size: 18px;
+	color:black;
+	border-radius: 0;
+}
+.be-firstone .container .join_now .join_form form{
+	width: 99%;
+	display: flex;
+	justify-content: center;
+	margin:auto;
+	padding-top: 3rem;
+}
+.be-firstone .container .join_now .join_form form button{
+	padding: 0.8rem 1.6rem;
+	font-size: 14px;
+	color:#fff;
+	background-color: rgb(17, 14, 15);
+	border-radius: 0;
+}
+/*End for be firstone area*/
+/*Start for footer area*/
+footer{
+	background-color: rgb(17, 14, 15);
+	width: 100%; 
+}
+.container .footer_desc{
+	padding:3rem 0 0.3rem 0;
+}
+.container .footer_desc .navbar-brand2{
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#fff;
+	font-size: 22px;
+	font-weight: 500;
+	transition: .5s ease;
+}
+.container .footer_desc .navbar-brand2:hover{
+	color:#2b75a1;
+}
+.container .footer_desc p{
+	color: #fff;
+	font-size: 12px;
+	margin: 1.5rem 0;
+}
+.container .footer_desc .sitemap h6,
+.container .footer_desc .category h6,
+.container .footer_desc .menu h6,
+.container .footer_desc .contact h6{
+	color:#fff;
+	margin-left: 2.4rem;
+}
+.container .footer_desc .sitemap a,
+.container .footer_desc .category a,
+.container .footer_desc .menu a{
+	color:#fff;
+	font-size: 12px;
+	text-decoration: none;
+	transition: .5s ease;
+}
+.container .footer_desc .sitemap ul,
+.container .footer_desc .category ul,
+.container .footer_desc .menu ul,
+.container .footer_desc .contact ul{
+	margin-top:2rem;
+}
+.container .footer_desc .contact a{
+	color:#fff;
+	font-size: 12px;
+	padding: 1rem 0;
+	text-decoration: none;
+	transition: .5s ease;
+}
+.container .footer_desc .contact i{
+	color:#d6a650;
+	font-size: 16px;
+	padding:0 0.8rem 1.2rem 0;
+}
+.container .footer_desc .sitemap a:hover,
+.container .footer_desc .category a:hover,
+.container .footer_desc .menu a:hover,
+.container .footer_desc .contact a:hover{
+	color:#2b75a1;
+}
+/*End for footer area*/
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px){
+	.navbar-light .navbar-nav .nav-link::before,
+	.navbar-light .navbar-nav .active::after{
+	display: none;
+}
+.navbar-light .navbar-nav .active{
+	color:#4c8bb3 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color:#4c8bb3 !important;
+}
+.banner{
+	background:url(../images/header-md.jpg)no-repeat;
+	padding: 8rem 0 4rem;
+	width: 100vw;
+	height: auto;
+}
+/*Start for Small store*/
+.small_store .smallstore_img{
+	padding-top: 5.5rem;
+}
+.small_store .smallstore_img .back{
+	width: 100%;
+	margin:auto;
+}
+.small_store .smallstore_img .front{
+	position: relative;
+	margin-left: -.7rem;
+	margin-top: -3rem;
+}
+/*End for Small store*/
+}
+
+@media (max-width: 767.98px){
+	/*Start for Small store*/
+.small_store .smallstore_img{
+	padding-top: 9rem;
+}
+.small_store .smallstore_img .back{
+	position: relative;
+	margin-left: -.9rem;
+}
+.small_store .smallstore_img .front{
+	position: absolute;
+	top: 4rem;
+	right: 0;
+	z-index: 222;
+}
+/*End for Small store*/
+
+}
